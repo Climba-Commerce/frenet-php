@@ -28,7 +28,7 @@ class AddressTest extends TestCase
      */
     private $response;
     
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->response = $this->createMock(\Frenet\Framework\Http\Response\ResponseSuccessInterface::class);
         $this->connection = $this->createMock(\Frenet\Service\ConnectionInterface::class);

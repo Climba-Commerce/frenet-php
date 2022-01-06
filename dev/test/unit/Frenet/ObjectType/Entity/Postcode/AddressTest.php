@@ -26,7 +26,7 @@ class AddressTest extends \FrenetTest\TestCase
         "Message" => "ok",
     ];
     
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->object = $this->createObject(\Frenet\ObjectType\Entity\Postcode\AddressInterface::class, [
             'data' => $this->data

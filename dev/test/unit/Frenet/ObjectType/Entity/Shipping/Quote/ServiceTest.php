@@ -32,7 +32,7 @@ class ServiceTest extends TestCase
         'ResponseTime' => 3.7865,
     ];
     
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->object = $this->createObject(\Frenet\ObjectType\Entity\Shipping\Quote\ServiceInterface::class, [
             'data' => $this->data
